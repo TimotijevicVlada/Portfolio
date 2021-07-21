@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: 'Vladimir';
-    src: url(Cabin-VariableFont_wdth\,wght.ttf);
+    src: url(fonts/Cabin-VariableFont_wdth\,wght.ttf);
 }
 html {
     scroll-behavior: smooth;
@@ -103,7 +103,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
-    background-image: url(comp\ img4.jpeg);
+    background-image: url(/images/comp-img4.jpeg);
     background-size: cover;
 }
 .pad {
