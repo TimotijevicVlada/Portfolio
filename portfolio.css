@@ -1,0 +1,614 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Vladimir';
+}
+@font-face {
+    font-family: 'Vladimir';
+    src: url(Cabin-VariableFont_wdth\,wght.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+/*////////////SCROLL BTN////////////////*/
+.scroll-up-btn {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+}
+.fa-angle-up {
+    background-color: #0698f9;
+    border-radius: 0.2em;
+    color: white;
+    padding: 0.2em 0.4em;
+    font-size: 1.3em;
+}
+.fa-angle-up:hover {
+    color: #0698f9;
+    border-radius: 0.2em;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.12em 0.32em;
+    border: 0.1em solid #0698f9;
+}
+/*/////////////SENDWICH BAR/////////////////*/
+.menu .fa-bars:hover {
+    color: #0698f9;
+}
+.menu .fa-bars {
+    display: block;
+    float: right;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+}
+/*////////////CANCEL BTN///////////////*/
+
+/*/////////////NAVIGATION MENU///////////////*/
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+}
+.flex {
+    display: flex;
+    margin: 0px 10px;
+}
+.header {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.header p {
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+}
+.header span {
+    color: #0698f9;
+}
+.menu-wide {
+    display: none;
+}
+.menu {
+    align-items: center;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+}
+.menu a:hover {
+    background-color: #0698f9;
+}
+/*/////////////HOME PAGE/////////////*/
+.home-content { 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.home {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-image: url(comp\ img4.jpeg);
+    background-size: cover;
+}
+.pad {
+    height: 100%;
+}
+.tekst-1 {
+    font-size: 1.5rem;
+}
+.tekst-2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.tekst-3 span {
+    color: #0698f9;
+}
+/*/////////ANIMATION/////////*/
+.tekst-3 {
+    font-size: 1.5rem;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid white;
+    animation: typing 4s steps(40, end), blink 0.5s step-end infinite;
+}
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 63%;
+    }
+  }
+@keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+}
+/*///////////////////////////*/
+.tekst-4 {
+    padding: 1.5rem 0rem;
+}
+.tekst-4 a {
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #0698f9;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+}
+.tekst-4 a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0.2rem solid #0698f9;
+    color: #0698f9;
+    padding: 0.3rem 0.8rem;
+}
+/*/////////////ABOUT PAGE//////////////*/
+.about {
+    background-color: black;
+}
+.aboutChild {
+    margin: 0 10px;
+    height: auto;
+}
+.title {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+.title h2 {
+    font-size: 3.2rem;
+}
+.title p {
+    font-size: 1.5rem;
+    color: #0698f9;
+}
+.aboutSecondChild {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    height: auto;
+}
+.aboutLeft, .aboutRight {
+    width: 100%;
+}
+.aboutLeft {
+    display: flex;
+    justify-content: center;
+}
+.aboutLeft img {
+    border-radius: 0.5rem;
+    width: 350px;
+}
+.aboutRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.aboutRight h3 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0rem;
+    text-align: center;
+}
+.aboutRight span {
+    color: #0698f9;
+}
+.aboutRight p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.about-btn {
+    margin: 2rem 0rem;
+}
+.about-btn a {
+    color: white;
+    background-color: #0698f9;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
+.about-btn a:hover {
+    background-color: black;
+    border: 0.2rem solid #0698f9;
+    padding: 0.3rem 0.8rem;
+}
+/*////////////SKILLS PAGE/////////////*/
+.skills-child {
+    margin: 0 10px;
+}
+.skills-title {
+    text-align: center;
+    color: black;
+    padding: 2rem;
+}
+.skills-title h2 {
+    font-size: 3.2rem;
+}
+.skills-title p {
+    font-size: 1.5rem;
+    color: #0698f9;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.html-card, .css-card, .js-card, .react-card {
+    display: flex;
+    color: white;
+    text-align: left;
+    background: linear-gradient(to right, #A940CE 0%, #0698F9 100%);
+    margin: 0.5rem 0rem;
+    border-radius: 4rem 0 0 4rem;
+    transition: margin-left 0.4s;
+    width: 90%;
+}
+.html-card:hover, .css-card:hover, .js-card:hover, .react-card:hover {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.fa-html5, .fa-css3-alt, .fa-js, .fa-react {
+    font-size: 4rem;
+}
+.card, .skills-right {
+    width: 100%;
+}
+.font-awesome {
+    width: 20%;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.font-awesome-description {
+    width: 80%;
+    padding: 0.5rem;
+}
+.skills-main {
+    display: flex;
+    flex-direction: column; 
+}
+.skills-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.skills-percent {
+    width: 95%;
+    height: 1.2rem;
+    border: 0.1rem solid lightgray;
+}
+.skills-percent-main {
+    width: 100%;
+    z-index: -999;
+}
+.html-percent, .css-percent, .js-percent, .react-percent {
+    width: 5%;
+    height: 100%;
+    background-color: #0698f9;
+    position: relative;
+    transition: width 1.5s ease-in-out;
+}
+.skills-right:hover  .html-percent {
+    width: 70%;
+}
+.skills-right:hover .css-percent {
+    width: 80%;
+}
+.skills-right:hover .js-percent {
+    width: 60%;
+}
+.skills-right:hover .react-percent {
+    width: 65%;
+}
+.skills-percent-title {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-percent-title h2 {
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+    border-radius: 0.3rem;
+    background-color: #0698f9;
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+.skills-percent-title p {
+    text-align: justify;
+}
+.percent-number {
+    display: flex;
+}
+.percent-diagram {
+    width: 90%;
+    margin: 0.3rem 0rem;
+}
+.percent-diagram-number {
+    width: 10%;
+    opacity: 0;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: flex-end;
+    transition: opacity 2.5s ease-in;
+}
+.skills-right:hover .percent-diagram-number {
+    opacity: 1;
+}
+
+/*////////////PROJECT//////////////*/
+.title-container {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 3rem 0rem;
+}
+.title-container span {
+    color: #0698f9;
+}
+.inner-project {
+    margin: 0 10px;
+    height: auto;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-double-card {
+    display: flex;
+    flex-direction: column;
+}
+.card-project {
+    height: 100%;
+    width: 20rem;
+    margin: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: black;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.card-project-h2, .card-project-text {
+    text-align: center;
+}
+.card-project-text {
+    padding-top: 0.5;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.card-project-h2 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.card-project-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    transition: 0.6s;
+}
+.card-project-img:hover {
+    transform: scale(1.2);
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    cursor: pointer;
+}
+.hidden {
+    height: 45%;
+    width: 100%;
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+    overflow: hidden;
+}
+.card-project-center {
+    height: 40%;
+}
+.card-bottom-div {
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 0rem 0rem 0.4rem 0.4rem;
+}
+.cardFirst, .cardSecond, .cardThird, .cardFourth{
+    background-color: #0698f9;
+}
+.card-bottom-div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.33%;
+    height: 100%;
+    color: white;
+}
+.card-bottom-div div:hover {
+    background-color: black;
+    cursor: pointer;
+}
+.card-read, .card-bottom-div-center, .card-comment {
+    height: 100%;
+}
+.card-read:hover {
+    background-color: black;
+    border-radius: 0rem 0rem 0rem 0.4rem;
+}
+.card-comment:hover {
+    background-color: black;
+    border-radius: 0rem 0rem 0.4rem 0rem;
+}
+.card-bottom-div-center {
+    border-left: 0.1px solid black;
+    border-right: 0.1px solid black;
+}
+.card-bottom-p1 {
+    font-size: 1.3rem;
+}
+.card-bottom-p2 {
+    font-size: 0.8rem;
+}
+
+/*////////////CONTACT PAGE/////////////*/
+.contact-title {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+.contact-title span {
+    color: #0698f9;
+}
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 10px;
+}
+.left-contact, .right-contact {
+    width: 100%;
+    margin: 0;
+}
+.contact-flex {
+    display: flex;
+}
+.left-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.left-contact div {
+    margin: 0.5rem 0rem;
+}
+.left-contact-info {
+    padding-left: 1.5rem;
+}
+.contact-icons {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #0698f9;
+}
+.info-bold {
+    font-weight: bold;
+}
+.right-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+.contact-table {
+    width: 100%;
+}
+.contact-table th {
+    text-align: left;
+    font-size: 1.7rem;
+}
+.input-name, .input-email, 
+.input-subject, .textarea {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+    padding: 0.6rem;
+    border: 1px solid lightgray;
+    border-radius: 0.4rem;
+}
+.input-email {
+    float: right;
+}
+.input-subject, .textarea {
+    width: 100%;
+}
+.input-name, .input-email {
+    width: 98%;
+}
+.textarea::placeholder {
+    font-size: 1.2rem;
+}
+.submit {
+    font-size: 1.1rem;
+    margin: 0.5rem 0rem;
+    padding: 0.8rem 1.4rem;
+    background-color: #0698f9;
+    color: white;
+    border-radius: 0.4rem;
+    border: none;
+}
+.submit:hover {
+    color: #0698f9;
+    background-color: white;
+    border: 0.1rem solid #0698f9;
+    padding: 0.7rem 1.3rem;
+}
+
+/*/////////////FOOTER//////////////*/
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+footer .prazno {
+    width: 100%;
+}
+footer .footer-center {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    padding: 1.3rem;
+}
+footer span {
+    color: #0698f9;
+}
+.drustvene-mreze {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem 0rem;
+}
+.drustvene-mreze div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.6rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.drustvene-mreze i {
+    color: black;
+    font-size: 1.7rem;
+}
+.drustvene-mreze i:hover {
+    color: #0698f9;
+}
+
+/*KLASE ZA JS*/
+
+.menuSmall {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}

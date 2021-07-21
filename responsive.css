@@ -1,0 +1,274 @@
+@media screen and (min-width: 600px) {
+    /*SCROL-UP-BTN*/
+    .fa-angle-up {
+        padding: 0.5em 0.7em;
+        font-size: 1.5em;    
+    }
+    .fa-angle-up:hover {
+        padding: 0.3em 0.5em;
+        border: 0.2em solid #0698f9; 
+    }
+    /*NAVIGACIJA*/
+    .flex {
+        margin: 0 7%;     
+    }
+    .menu .fa-bars {
+        display: block;  
+    }
+    .menu {
+        display: flex;
+        justify-content: right;   
+    }
+    .menu a {
+        padding: 1.5rem 1.5rem;
+    }  
+    .menu-wide {
+        display: none;
+    }  
+
+    /*HOME*/
+    .home {
+        height: 100vh;   
+    }
+    .pad {
+        height: 100vh;    
+    }
+    .home {
+        background-image: url(comp\ img1.jpg);
+        background-size: cover;           
+    }
+    .home-content {
+        align-items: flex-start;
+        width: 100%;       
+    }
+    .tekst-1 {
+        font-size: 1.8rem;  
+    }
+    .tekst-2 {
+        font-size: 3rem;    
+    }
+    .tekst-3 {
+        font-size: 2.4rem;   
+    }
+    .tekst-4 a {
+        font-size: 2rem;     
+    }
+    .tekst-3 {
+        border-right: 0.15em solid white;    
+    }
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        100% {
+          width: 65%;
+        }
+    }
+    .tekst-4 a {
+        padding: 0.9rem 2rem;   
+    }
+    .tekst-4 a:hover {
+        padding: 0.7rem 1.8rem;   
+    }
+    /*ABOUT*/
+    .aboutChild {
+        height: auto;          
+        margin: 0 7%; 
+    }
+    .aboutSecondChild {
+        display: flex;
+        flex-direction: column;         
+        height: auto;
+    }
+    .aboutLeft {
+        align-items: center;  
+        justify-content: center;   
+    }
+    .aboutRight, .aboutLeft {
+        width: 100%;             
+    }
+    .aboutLeft img {
+        width: 80%;          
+    }
+    .title {
+        padding: 6rem 3rem 3rem 3rem;    
+    }
+    .aboutRight {
+        flex-direction: column;
+        justify-content: center;         
+    }
+    .aboutRight h3 {
+        text-align: left;
+    }
+    .about-btn a {
+        padding: 1rem 2rem;
+        border-radius: 0.3rem;           
+    }
+    .about-btn a:hover {
+        padding: 0.8rem 1.8rem;       
+    }
+    /*SKILLS*/
+    .skills-title {
+        padding: 6rem 3rem 3rem 3rem;     
+    }
+    .skills-child {
+        margin: 0px 7%;          
+    }
+    .skills-main {
+        flex-direction: column;       
+    }
+    .card, .skills-right {
+        width: 100%;           
+    }
+    .fa-html5, .fa-css3-alt, .fa-js, .fa-react {
+        font-size: 5rem;          
+    }
+    .html-card, .css-card, .js-card, .react-card {
+        width: 90%;         
+    }
+    .html-card:hover, .css-card:hover, .js-card:hover, .react-card:hover {
+        margin-left: 4rem;          
+    }
+    .skills-percent-title h2 {
+        width: 50%;             
+    }
+
+    /*PROJECT*/
+    .inner-project {
+        margin: 0px 7%;
+        height: auto;      
+    }
+    .card-container {
+        flex-direction: column;    
+    }
+    .project-double-card {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0rem;
+    }
+    .card-project {
+        width: 50%;
+        margin: 0 0.9rem;     
+    }
+
+    /*CONTACT*/
+    .inner-container {
+        flex-direction: column;    
+        height: auto;
+        margin: 0 7%;
+    }
+    .contact-title {
+        text-align: center;     
+        font-size: 1.7rem;
+        padding-top: 4rem;
+    }
+    .left-contact, .right-contact {
+        width: 100%;            
+    }
+    .contact-table {
+        width: 90%;      
+    }
+    .right-contact {
+        align-items: center;   
+    }
+
+    /*FOOTER*/
+    footer {
+        flex-direction: column;      
+    }
+    footer .prazno {
+        display: none;            
+    }
+    footer .footer-center {
+        width: 100%;       
+    }
+    footer .drustvene-mreze {  
+        width: 100%;          
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        100% {
+          width: 50%;
+        }
+      }
+    .menu-wide {
+        display: block;       
+    }
+    .menu .fa-bars {
+        display: none;    
+    }
+    .menu {
+        display: flex;
+        justify-content: center;   
+    }
+    .menu a {
+        padding: 1.5rem 1rem;
+    }
+    .aboutLeft img {
+        width: 60%;          
+    }
+    .inner-container {
+        flex-direction: row;
+    }
+    .left-contact {
+        width: 40%;
+    }
+    .right-contact {
+        width: 60%;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu a {
+        padding: 1.5rem 2rem;
+    } 
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        100% {
+          width: 32%;
+        }
+      }
+    .about {
+        height: 100vh;
+    }
+    .aboutSecondChild {
+        flex-direction: row;         
+    }
+    .aboutLeft {
+        align-items: center;  
+        justify-content: flex-start;   
+    }
+    .skills-main {
+        flex-direction: row;       
+    }
+    .card-container {
+        flex-direction: row;    
+    }
+    .html-card, .css-card, .js-card, .react-card {
+        width: 80%;         
+    }
+    .left-contact, .right-contact {
+        width: 50%;
+    }
+    footer {
+        flex-direction: row;
+    }
+    footer .prazno {
+        display: block;
+        width: 30%;
+    }
+    footer .drustvene-mreze {
+        width: 30%;
+    }
+    footer .footer-center {
+        width: 40%;
+    }
+}
