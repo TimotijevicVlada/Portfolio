@@ -246,6 +246,9 @@
         align-items: center;  
         justify-content: flex-start;   
     }
+    .aboutLeft img {
+        width: 50%;
+    }
     .skills-main {
         flex-direction: row;       
     }
