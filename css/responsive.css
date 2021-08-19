@@ -252,6 +252,10 @@
     .skills-main {
         flex-direction: row;       
     }
+    .card-project {
+        width: 300px;
+        height: 450px;
+    }
     .card-container {
         flex-direction: row;    
     }
