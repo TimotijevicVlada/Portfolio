@@ -164,6 +164,7 @@ nav {
 /*/////////////ABOUT PAGE//////////////*/
 .about {
     background-color: black;
+    
 }
 .aboutChild {
     margin: 0 10px;
@@ -228,6 +229,33 @@ nav {
     background-color: black;
     border: 0.2rem solid #0698f9;
     padding: 0.3rem 0.8rem;
+}
+.indent {
+    text-indent: 40px;
+}
+/*CV*/
+.cv_container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.back_btn {
+    background-color: #0698f9;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.back_btn:hover {
+    border: 2px solid #0698f9;
+    background-color: white;
+    color: #0698f9;
+    cursor: pointer;
 }
 /*////////////SKILLS PAGE/////////////*/
 .skills-child {
