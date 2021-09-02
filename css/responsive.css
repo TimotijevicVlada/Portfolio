@@ -22,9 +22,7 @@
     .menu a {
         padding: 1.5rem 1.5rem;
     }  
-    .menu-wide {
-        display: none;
-    }  
+    
 
     /*HOME*/
     .home {
@@ -196,8 +194,11 @@
           width: 50%;
         }
       }
-    .menu-wide {
-        display: block;       
+    .menu-content {
+        flex-direction: row;
+        position: inherit;
+        width: auto;
+        height: auto;
     }
     .menu .fa-bars {
         display: none;    
@@ -225,9 +226,17 @@
 }
 
 @media screen and (min-width: 992px) {
+    
     .menu a {
         padding: 1.5rem 2rem;
     } 
+    .menu-content {
+        flex-direction: row;
+        position: inherit;
+        width: auto;
+        height: auto;
+    }
+    
     @keyframes typing {
         from {
           width: 0;
